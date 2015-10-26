@@ -1,0 +1,14 @@
+<head>
+<script type="text/javascript">
+    function changeActivity() {
+        Android.openActivity();
+    }
+	
+//下面这句是让js在网页载入的时候自动运行，打开OpenActivity，如果想通过按钮点击，就需要把下面的这一句给注释掉
+	 window.onload =  changeActivity() ;
+</script>
+</head>
+<body>
+//这个按钮也可以用来手动点击，来执行js，启动OpenActivity\
+<button onClick="Android.openActivity();">Call Java Activity Method</button>
+</body>
